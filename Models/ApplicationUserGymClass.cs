@@ -3,16 +3,16 @@
     public class ApplicationUserGymClass
     {
         //Pk
-        public Guid Id { get; set; }
+        //public Guid Id { get; set; }
         //Fk
-        public Guid GymClassId { get; set; }
+        public int GymClassId { get; set; }
         public string ApplicationUserId { get; set; } = default!;
 
         // Navigation
         public GymClass GymClass  { get; set; } = default!;
-        public ApplicationUser ApplicationUser { get; set; } = default!;
+        public ApplicationUser User { get; set; } = default!;
         //Joining 
-        public DateTime DateJoined  { get; set; }
+        //public DateTime DateJoined  { get; set; }
 
     }
 }
